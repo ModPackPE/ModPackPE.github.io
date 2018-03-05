@@ -1,6 +1,8 @@
 ---
 layout: default
 comments: true
+title: ModPackPE
+github.zip_url: https://github.com/ModPackPE/ModPackPE/archive/master.zip
 # other options
 ---
 # Welcome to ModPackPE, the currently biggest and most ambitious ModPack for Minecraft on Android. 

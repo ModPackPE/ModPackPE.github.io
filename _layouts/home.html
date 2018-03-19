@@ -17,7 +17,7 @@ body {
     
 .logo{
         border-radius: 25px;
-        width:20%;
+        width:40%;
         height:20%;
 }
     
@@ -31,9 +31,9 @@ body {
         <img src="pictures/logo.png" alt="error: image missing" class="logo">
       <h1 class="project-name">ModPackPE</h1>
       <h2 class="project-tagline">The ModPack you've been waiting for</h2>
-        <a href="https://github.com/ModPackPE/ModPackPE/archive/master.zip" class="btn">Download</a>
+        <a href="https://github.com/ModPackPE/ModPackPE/archive/master.zip" class="btn downloadrv">Download</a>
 
-        <a class="js-gitter-toggle-chat-button btn">Chat with me!</a>
+        <a class="js-gitter-toggle-chat-button btn downloadrv">Chat with me!</a>
     </section>
 
     <section class="main-content">
@@ -49,9 +49,6 @@ body {
 
     </section>
 
-    <footer class="site-footer" style="background-color: #000000">
-        <p align="center">Thanks to GitHub pages for hosting this!</p>
-      </footer>
     {% if site.google_analytics %}
       <script type="text/javascript">
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -68,6 +65,7 @@ body {
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script>
 window.sr = ScrollReveal();
-sr.reveal('.logo', { duration: 1500, scale: 0.5, reset: true });
+sr.reveal('.logo', { duration: 2000, scale: 0.5, reset: true });
+sr.reveal('.downloadrv', { duration: 1000, scale: 0.5, reset: true }, 500);
 </script>
 </html>

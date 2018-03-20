@@ -15,6 +15,10 @@ body {
         background-color:#000000;
 }
     
+.pixelart {
+        image-rendering: pixelated;
+}
+
 .logo{
         border-radius: 25px;
         width:40%;
@@ -33,7 +37,8 @@ body {
       <h2 class="project-tagline">The ModPack you've been waiting for</h2>
         <a href="https://github.com/ModPackPE/ModPackPE/archive/master.zip" class="btn downloadrv">Download</a>
 
-        <a class="js-gitter-toggle-chat-button btn downloadrv">Chat with me!</a>
+        <a class="btn downloadrv" href="#comm">Chat with me!</a>
+
     </section>
 
     <section class="main-content">
@@ -60,6 +65,31 @@ body {
         ga('send', 'pageview');
       </script>
     {% endif %}
+    <div id="comm">
+    
+<div id="disqus_thread"></div>
+    </div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://modpackpe.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+    <script id="dsq-count-scr" src="//modpackpe.disqus.com/count.js" async></script>
+<script src="dist/js/smooth-scroll.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
   </body>
 
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
@@ -68,4 +98,7 @@ window.sr = ScrollReveal();
 sr.reveal('.logo', { duration: 2000, scale: 0.5, reset: true });
 sr.reveal('.downloadrv', { duration: 1000, scale: 0.5, reset: true }, 500);
 </script>
+
+
+
 </html>

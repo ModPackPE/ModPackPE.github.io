@@ -19,13 +19,13 @@ body {
         width: 10%;
         height: 10%;
         image-rendering: pixelated;
+        padding:15px;
 }
 
 .logo{
         border-radius: 25px;
         width:40%;
         height:20%;
-                padding: 10px;
 }
     
 
@@ -131,7 +131,7 @@ s.setAttribute('data-timestamp', +new Date());
 window.sr = ScrollReveal();
 sr.reveal('.logo', { duration: 2000, scale: 0.5, reset: true });
 sr.reveal('.downloadrv', { duration: 1000, scale: 0.5, reset: true }, 500);
-sr.reveal('.pixelart', { duration: 4000, scale: 0, reset: true }, 10);
+sr.reveal('.pixelart', { duration: 4000, distance: '80px', scale: 0, reset: true }, 10);
 </script>
 
 
